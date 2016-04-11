@@ -61,6 +61,7 @@ The module includes the following response plugins:
 * `gzip(options)` - gzips the response if client accepts it
   * `options` {Object} options to pass to zlib
 * `serveStatic()` - used to serve static files
+  * `options.checkIfModified` {Boolean} if true, will check file modified date to send a 304.
 * `throttle(options)` - throttles responses
   * `options.burst` {Number}
   * `options.rate` {Number}
